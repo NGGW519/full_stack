@@ -1,5 +1,6 @@
+'use client'
 import React, {useState} from 'react';
-import type {EmployeeInfo} from "@/components/Main";
+import {EmployeeInfo, useEmployee} from "@/context/EmployeeContext";
 
 
 export const formStyle: React.CSSProperties = {
@@ -36,7 +37,9 @@ interface RegisterProps {
     handleRegister: (obj: EmployeeInfo) => void;
 }
 
-const Register = ({handleRegister}:RegisterProps) => {
+const Register = () => {
+    const {handleRegister} = useEmployee()
+
     const [info, setInfo] = useState<EmployeeInfo>(initialEmpInfo);
 
     const handlechange = (e: React.ChangeEvent<HTMLInputElement>) => {

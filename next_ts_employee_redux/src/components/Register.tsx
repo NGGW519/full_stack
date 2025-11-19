@@ -1,6 +1,9 @@
+'use client';
 import React, {useState} from 'react';
-import type {EmployeeInfo} from "@/components/Main";
-
+import {useDispatch} from "react-redux";
+import {EmployeeInfo} from "@/redux/employeeSlice";
+import {handleRegister} from "@/redux/employeeSlice";
+import {RootDispatch} from "@/redux/store";
 
 export const formStyle: React.CSSProperties = {
     display: 'flex',
@@ -13,7 +16,6 @@ export const formStyle: React.CSSProperties = {
     backgroundColor: '#f9f9f9',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
 };
-
 export const labelStyle: React.CSSProperties = {
     marginBottom: '10px',
     display: 'flex',
@@ -21,80 +23,79 @@ export const labelStyle: React.CSSProperties = {
     fontWeight: 'bold',
     color: '#333',
 };
-
 export const inputStyle: React.CSSProperties = {
     padding: '8px',
     borderRadius: '5px',
     border: '1px solid #ccc',
     fontSize: '14px',
 };
-
 const initialEmpInfo: EmployeeInfo
-    = {id:0, name: "", age: 0, job: "", language: "", pay: 0}
-
-interface RegisterProps {
-    handleRegister: (obj: EmployeeInfo) => void;
-}
-
-const Register = ({handleRegister}:RegisterProps) => {
+    = {id:0, name: '', age: 0, job: "", language: "", pay: 0}
+const Register = () => {
+    const dispatch = useDispatch<RootDispatch>();
     const [info, setInfo] = useState<EmployeeInfo>(initialEmpInfo);
-
-    const handlechange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const {name, value} = e.target
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
         // console.log(name, value)
-        setInfo(prev => ({...prev, [name]: value})); // id는 그대로 유지
-    }
-
+        setInfo((prev) => ({ ...prev, [name]: value })); // id는 그대로 유지
+    };
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); // 이거로 안막어주면 에러난다.
-        handleRegister(info);
-    }
+        e.preventDefault();
+        dispatch(handleRegister(info));
+    };
     return (
         <form style={formStyle} onSubmit={handleSubmit}>
             <label style={labelStyle}>
-                Name:
+                Name
                 <input
                     type="text"
                     name="name"
-                    onChange={handlechange}
                     style={inputStyle}
-                    required/>
+                    onChange={handleChange}
+                    required
+                />
             </label>
             <label style={labelStyle}>
-                Age:
+                Age
                 <input
                     type="number"
                     name="age"
-                    min={1}
-                    onChange={handlechange}
                     style={inputStyle}
-                    required/>
+                    onChange={handleChange}
+                    min={1}
+                    required
+                />
             </label>
             <label style={labelStyle}>
-                Job:
+                Job
                 <input
                     type="text"
                     name="job"
-                    onChange={handlechange}
-                    style={inputStyle}/>
+                    style={inputStyle}
+                    onChange={handleChange}
+                />
             </label>
             <label style={labelStyle}>
-                Language:
+                Language
                 <input
                     type="text"
                     name="language"
-                    onChange={handlechange}
-                    style={inputStyle}/>
+                    style={inputStyle}
+                    onChange={handleChange}
+                />
             </label>
             <label style={labelStyle}>
-                Pay:
-                <input type="number"
-                       name="pay" min={0}
-                       onChange={handlechange}
-                       style={inputStyle}
-                       required/>
+                Pay
+                <input
+                    type="number"
+                    name="pay"
+                    style={inputStyle}
+                    onChange={handleChange}
+                    min={0}
+                    required
+                />
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit">등록</button>
         </form>
     );
 };
