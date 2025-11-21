@@ -6,6 +6,8 @@ import Register from "@/components/Register";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState, RootDispatch} from "@/redux/store";
 import {handleMode} from "@/redux/slice/employeeSlice";
+import type {Mode} from "@/redux/slice/employeeSlice";
+import {fetchDeleteEmployeeInfoById} from "@/redux/api/employeeAPI";
 
 export const buttonBarStyle:React.CSSProperties = {
     display: "flex",
@@ -17,8 +19,21 @@ export const buttonBarStyle:React.CSSProperties = {
 }
 
 const Main = () => {
-    const {mode, modes} = useSelector((state: RootState) => state.emp);
+    const {mode, modes, selectedId} = useSelector((state: RootState) => state.emp);
     const dispatch = useDispatch<RootDispatch>();
+    const handleModeChange = (id: Mode) => {
+        if (id === 'delete') {
+            if (!selectedId) {
+                alert("직원을 선택하세요.");
+                return;
+            }
+            if (confirm("삭제하시겠습니까?")) {
+                dispatch(fetchDeleteEmployeeInfoById(selectedId)); // API 호출
+            }
+        } else {
+            dispatch(handleMode(id));
+        }
+    };
 
 
     return ( // return에서 화면 구성에 대해 표현한다.
@@ -28,7 +43,7 @@ const Main = () => {
             </div>
             <div style={buttonBarStyle}>
                 {modes.map(item => (
-                    <button key={item.id} onClick={()=>dispatch(handleMode(item.id))}>
+                    <button key={item.id} onClick={()=>handleModeChange(item.id)}>
                         {item.label}
                     </button>
                     // key는 각 요소를 고유하게 식별하기 위한 값.

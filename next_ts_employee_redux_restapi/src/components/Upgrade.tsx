@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {RootDispatch, RootState} from "@/redux/store";
 import type {EmployeeInfo} from "@/redux/slice/employeeSlice";
@@ -18,7 +18,6 @@ const formStyle: React.CSSProperties = {
     backgroundColor: '#f9f9f9',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
 };
-
 const labelStyle: React.CSSProperties = {
     marginBottom: '10px',
     display: 'flex',
@@ -26,7 +25,6 @@ const labelStyle: React.CSSProperties = {
     fontWeight: 'bold',
     color: '#333',
 };
-
 const inputStyle: React.CSSProperties = {
     padding: '8px',
     borderRadius: '5px',
@@ -44,8 +42,9 @@ const createInitialState = (): EmployeeInfo => ({
     pay: 0,
 });
 
+
 const Upgrade = () => {
-    const {upInfo} = useSelector((state: RootState) => state.emp);
+    const {upInfo, mode} = useSelector((state: RootState) => state.emp);
     const dispatch = useDispatch<RootDispatch>();
 
     const [info, setInfo] = useState<EmployeeInfo>(() => createInitialState());
@@ -66,6 +65,7 @@ const Upgrade = () => {
             return;
         }
         dispatch(fetchPutEmployeeInfoById(info)); // API 호출
+        // mode = ''
     };
 
     /* eslint-disable react-hooks/set-state-in-effect */

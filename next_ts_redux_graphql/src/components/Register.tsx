@@ -2,8 +2,8 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {EmployeeInfo} from "@/redux/slice/employeeSlice";
-import {RootDispatch, RootState} from "@/redux/store";
 import {fetchPostEmployeeInfo} from "@/redux/api/employeeAPI";
+import {RootDispatch, RootState} from "@/redux/store";
 
 export const formStyle: React.CSSProperties = {
     display: 'flex',
@@ -31,9 +31,11 @@ export const inputStyle: React.CSSProperties = {
 };
 const initialEmpInfo: EmployeeInfo
     = {id:0, name: '', age: 0, job: "", language: "", pay: 0}
+
 const Register = () => {
     const dispatch = useDispatch<RootDispatch>();
-    const {infos} = useSelector((state:RootState)=> state.emp);
+    const {infos} = useSelector((state:RootState)=> state.emp)
+
     const [info, setInfo] = useState<EmployeeInfo>(initialEmpInfo);
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -42,23 +44,26 @@ const Register = () => {
     };
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (!info.name) {
-            alert("이름은 필수입니다.")
-            return;
-        }
-        if (!info.age || Number(info.age) < 0) {
-            alert("나이는 필수입니다.")
-            return;
-        }
-        if (!info.pay || Number(info.pay) < 0) {
-            alert("급여는 필수입니다.")
-            return;
-        }
-        if (infos.some(item => item.name === info.name)) {
-            alert("이미 존재하는 이름입니다.")
-            return;
-        }
-        dispatch(fetchPostEmployeeInfo(info)) //api 작동
+        // if (!info.name) {
+        //     alert("이름은 필수입니다.")
+        //     return;
+        // }
+        // if (!info.age || Number(info.age) < 0) {
+        //     alert("나이는 필수입니다.")
+        //     return;
+        // }
+        // if (!info.pay || Number(info.pay) < 0) {
+        //     alert("급여는 필수입니다.")
+        //     return;
+        // }
+        // if (infos.some(item => item.name === info.name)) {
+        //     alert("이미 존재하는 이름입니다.")
+        //     return;
+        // }
+
+        dispatch(fetchPostEmployeeInfo(info))
+        setInfo(initialEmpInfo);
+
     };
     return (
         <form style={formStyle} onSubmit={handleSubmit}>

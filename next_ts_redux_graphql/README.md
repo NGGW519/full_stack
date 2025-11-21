@@ -1,9 +1,3 @@
-front 열기 : npm run dev
-back 열기 : cd server 후에 package.json에 있는 서버 터미널에 명령
-
-npm install -g json-server@0.17.4
-
-
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

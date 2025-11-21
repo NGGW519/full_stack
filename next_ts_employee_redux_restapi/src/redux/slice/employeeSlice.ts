@@ -61,24 +61,25 @@ const handleModeReducer = (
 ) => {
     const mode = action.payload
 
-    if (mode === "delete") {
-        if (!state.selectedId) {
-            alert("직원을 선택하세요.")
-            return;
-        }
-        const targetObj = state.infos.find(x => x.id === state.selectedId);
-        if (!targetObj) {
-            alert("해당 직원을 찾을 수 없습니다.")
-            return;
-        }
-        if (confirm(`${targetObj.name} 직원을 삭제하시겠습니까?`)) {
-            state.infos = [...state.infos].filter(item => item.id !== state.selectedId);
-            state.mode = "";
-            state.upInfo = null;
-            state.selectedId = null;
-        }
-        return;
-    }
+    // Main으로 옮김
+    // if (mode === "delete") {
+    //     if (!state.selectedId) {
+    //         alert("직원을 선택하세요.")
+    //         return;
+    //     }
+    //     const targetObj = state.infos.find(x => x.id === state.selectedId);
+    //     if (!targetObj) {
+    //         alert("해당 직원을 찾을 수 없습니다.")
+    //         return;
+    //     }
+    //     if (confirm(`${targetObj.name} 직원을 삭제하시겠습니까?`)) {
+    //         state.infos = [...state.infos].filter(item => item.id !== state.selectedId);
+    //         state.mode = "";
+    //         state.upInfo = null;
+    //         state.selectedId = null;
+    //     }
+    //     return;
+    // }
     if (mode === "reset") {
         if (confirm("목록을 초기 데이터로 되돌릴까요?")) {
             state.infos = [];
@@ -133,7 +134,6 @@ const handleSelectedIdReducer = (
 //     state.infos = [...state.infos, {...obj, id: nextId}];
 // }
 
-
 // api 설계시 Upgrade의 handleSubmit에 직접 넣음으로서 주석처리
 // const handleUpgradeReducer = (
 //     state: EmployeeStateType,
@@ -187,6 +187,21 @@ const employeeSlice = createSlice({
                 state.loading = false;
                 state.error = action.payload ?? "로드 실패";
             })
+        // POST 방식으로 데이터 등록하기. fetchPostEmployeeInfo
+        builder
+            .addCase(fetchPostEmployeeInfo.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchPostEmployeeInfo.fulfilled, (state, action) => {
+                state.loading = false;
+                state.infos = [...state.infos, action.payload];
+                state.mode = '';
+            })
+            .addCase(fetchPostEmployeeInfo.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload ?? "등록 실패";
+            })
         // PUT 방식으로 데이터 수정하기
         builder
             .addCase(fetchPutEmployeeInfoById.pending, (state) => {
@@ -195,11 +210,32 @@ const employeeSlice = createSlice({
             })
             .addCase(fetchPutEmployeeInfoById.fulfilled, (state, action) => {
                 state.loading = false;
+                state.infos = state.infos.map(item =>
+                    item.id === action.payload.id ? action.payload : item
+                );
                 state.upInfo = action.payload;
+                state.mode = '';
             })
             .addCase(fetchPutEmployeeInfoById.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload ?? "수정 실패";
+            })
+        // DELETE 방식으로 데이터 삭제하기
+        builder
+            .addCase(fetchDeleteEmployeeInfoById.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchDeleteEmployeeInfoById.fulfilled, (state, action) => {
+                state.loading = false;
+                state.infos = state.infos.filter(item => item.id !== action.payload); // employeeAPI.ts를 보면 delete가 id를 return하게 되어있기 때문에 id를 업뎃
+                state.selectedId = null;
+                state.upInfo = null;
+                state.mode = '';
+            })
+            .addCase(fetchDeleteEmployeeInfoById.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload ?? "삭제 실패";
             })
 
     }
