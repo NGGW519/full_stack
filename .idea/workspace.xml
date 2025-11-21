@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13cb8079-8b23-40e6-a37e-469663063b72" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.claude/settings.local.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.idea/next_ts_employee_context.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src/context/EmployeeContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/src_my/context/EmployeeContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_context/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.idea/next_ts_employee_redux.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/redux/Providers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/redux/employeeSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/src/redux/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.idea/next_ts_employee_redux_restapi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/server/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/server/routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/redux/Providers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/redux/api/employeeAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/redux/slice/employeeSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/src/redux/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_employee_redux_restapi/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.idea/next_ts_redux_graphql.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/redux/Providers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/redux/api/employeeAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/redux/slice/employeeSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/src/redux/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_ts_redux_graphql/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/nextjs_ts_employee.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/components/EmployeeList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/components/InfoTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/components/Main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/components/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/src/components/Upgrade.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nextjs_ts_employee/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="35lsSkFgybcvyMssQ3PsGmEXpKj" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.database.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/tj/Desktop/frontend"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tj\Desktop\frontend\backend" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="13cb8079-8b23-40e6-a37e-469663063b72" name="변경" comment="" />
+      <created>1763695994389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763695994389</updated>
+    </task>
+    <servers />
+  </component>
+</project>
